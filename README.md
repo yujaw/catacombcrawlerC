@@ -1,4 +1,4 @@
-# Catacomb Crawler
+# Catacomb Crawler 👺
 
 ## About the Game
 

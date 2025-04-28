@@ -1,42 +1,56 @@
-# Catacomb Crawler 👺
+# 🐉 Catacomb Crawler
 
-## About the Game
+## ✨ Overview
+Catacomb Crawler is a dungeon exploration game written in C. Players navigate procedurally generated catacombs, battle enemies, solve puzzles, and collect treasures. The game emphasizes performance and retro-style gameplay mechanics.
 
-Catacomb Crawler is an exciting dungeon exploration game where players navigate through procedurally generated catacombs, battling enemies, solving puzzles, and collecting treasures. Written in C, the game emphasizes performance and classic gameplay mechanics, offering a nostalgic yet challenging experience for fans of retro-style games.
+## 🚀 Getting Started
 
-## Prerequisites
+### ⚙️ Prerequisites
+Ensure you have the following installed on your system:
+- 🐳 Docker (for cross-platform builds)
+- 🛠️ GCC or Clang (for native builds)
 
-- [Docker](https://www.docker.com/) installed on your system.
+### 📥 Installation and Usage
 
-## Steps to Run
+Clone the repository:
+```bash
+git clone https://github.com/yourusername/catacombcrawlerC.git
+```
 
-1. **Clone the Repository**  
-    Clone this repository to your local machine:
+#### 🍎 For macOS
+1. 📂 Navigate to the project folder:
     ```bash
-    git clone https://github.com/yourusername/catacombcrawlerC.git
     cd catacombcrawlerC
     ```
+2. 🏗️ Build the program:
+    ```bash
+    gcc -o catacombcrawler main.c
+    ```
+3. ▶️ Run the program:
+    ```bash
+    ./catacombcrawler
+    ```
 
-2. **Build the Docker Image**  
-    Build the Docker image using the provided `Dockerfile`:
+#### 🖥️ For Windows
+1. 📂 Navigate to the project folder:
+    ```bash
+    cd catacombcrawlerC
+    ```
+2. 🏗️ Build the program:
+    ```bash
+    gcc -o catacombcrawler.exe main.c
+    ```
+3. ▶️ Run the program:
+    ```bash
+    .\catacombcrawler.exe
+    ```
+
+#### 🐳 Using Docker
+1. 🏗️ Build the Docker image:
     ```bash
     docker build -t catacombcrawler .
     ```
-
-3. **Run the Application**  
-    Run the application in a Docker container:
+2. ▶️ Run the Docker container:
     ```bash
     docker run --rm -it catacombcrawler
     ```
-
-## Notes
-
-- Ensure that the `Dockerfile` is correctly set up to compile and run the C program.
-- If you need to map volumes or expose ports, modify the `docker run` command accordingly.
-
-## Troubleshooting
-
-- If you encounter issues, ensure Docker is running and that the `Dockerfile` is in the project root directory.
-- Check the logs for errors during the build or run process.
-
-Enjoy exploring the Catacomb Crawler!
